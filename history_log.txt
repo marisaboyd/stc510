@@ -1,0 +1,41 @@
+Script started on Thu Feb  2 10:18:03 2023
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ curl -s -L https://www.dropbox.com/s/14jagxjbzhyxg8g/log.tar.gz?dl=0 -o project2file.tar.gz
+bash-3.2$ tar -xvzf project2file.tar.gz
+x log.csv
+bash-3.2$ git clone https://github.com/marisaboyd/stc510.git
+Cloning into 'stc510'...
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  25% (1/4)[Kremote: Compressing objects:  50% (2/4)[Kremote: Compressing objects:  75% (3/4)[Kremote: Compressing objects: 100% (4/4)[Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  25% (1/4)Receiving objects:  50% (2/4)Receiving objects:  75% (3/4)Receiving objects: 100% (4/4)Receiving objects: 100% (4/4), 4.32 KiB | 4.32 MiB/s, done.
+bash-3.2$ grep -n -- ',education.*\.txt\>' log.csv > education_textfiles.txt
+bash-3.2$ mv education_textfiles.txt /users/marisaboyd/Desktop/STC_510/stc510[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kless education_textfiles.txt
+[?1049h[?1h=7110501:40.77.167.ifh,2017-06-27,07:03:14,0.0,1302343.0,0000869311-17-000385,education.realty.trust..txt,200.0,5145.0,0.0,0.0,0.0,10.0,0.0 ,
+24186835:86.153.148.abf,2017-06-27,23:54:09,0.0,1302343.0,0001390777-09-000029,educationrealty2008yebnymc.txt,200.0,7078.0,0.0,0.0,0.0,10. 0,0.0,
+[7meducation_textfiles.txt (END)[27m[K[K[?1l>[?1049lbash-3.2$ mv education_textfiles.txt /users/marisaboyd/Desktop/STC_510/stc510
+bash-3.2$ ls
+history_log.txt		log.csv			project2file.tar.gz	stc510
+bash-3.2$ cd stc510
+bash-3.2$ ls
+LICENSE			education_textfiles.txt
+bash-3.2$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31meducation_textfiles.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ cd ..
+bash-3.2$ ls
+history_log.txt		log.csv			project2file.tar.gz	stc510
+bash-3.2$ exit
+exit
+
+Script done on Thu Feb  2 10:21:25 2023
